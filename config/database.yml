@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  username: postgres
+  password: postgres # from psql setup, see Postgresql
+  database: base_app_development
+
+test:
+  adapter: postgresql
+  username: postgres
+  password: postgres # from psql setup, see Postgresql
+  database: base_app_test
+
+production:
+  adapter: postgresql
+  username: postgres
+  password: postgres # from psql setup, see Postgresql
+  database: base_app_production
