@@ -35,4 +35,6 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'debugger'
+gem 'debugger'
+gem "twitter-bootstrap-rails"
+gem 'composite_primary_keys'

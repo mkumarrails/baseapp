@@ -1,11 +1,11 @@
 class CreateCustomers < ActiveRecord::Migration
   def change
     create_table :customers, {:id => false} do |t|
-      t.string :emp_id
-      t.string :first_name
+      t.string :uuid, :primary_key => true
+      t.string :kind
 
       t.timestamps
     end
-    execute "ALTER TABLE employees ADD PRIMARY KEY (emp_id);"  
   end
+
 end

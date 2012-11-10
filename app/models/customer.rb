@@ -1,3 +1,8 @@
+require 'composite_primary_keys'
 class Customer < ActiveRecord::Base
-  # attr_accessible :title, :body
+  #include ActiveUUID::UUID
+  self.primary_keys = 'uuid'
+  attr_accessible  :kind, :uuid
+  belongs_to :sender
+  validates :uuid, :presence => true, :uniqueness => true, :email_format => true
 end
