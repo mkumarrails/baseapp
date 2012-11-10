@@ -1,0 +1,7 @@
+<h1>User Signup</h1>
+
+<%= form_tag( '/customer_registrations', :method => :post) do %>
+  <%= label_tag  :email %>
+  <%= text_field_tag :uuid %>
+  <%= submit_tag 'Sign-Up' %>
+<% end %> 
