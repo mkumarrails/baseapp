@@ -39,3 +39,4 @@ gem 'debugger'
 gem "twitter-bootstrap-rails"
 gem 'uuidtools'
 gem 'redis'
+gem 'activerecord-postgres-hstore', git: 'git://github.com/engageis/activerecord-postgres-hstore.git'

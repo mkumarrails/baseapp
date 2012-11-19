@@ -1,3 +1,12 @@
+GIT
+  remote: git://github.com/engageis/activerecord-postgres-hstore.git
+  revision: c27b375ac0b38519e463d03ae269003c9116e264
+  specs:
+    activerecord-postgres-hstore (0.4.1)
+      pg
+      rails
+      rake
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -128,6 +137,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activerecord-postgres-hstore!
   coffee-rails (~> 3.2.1)
   debugger
   jquery-rails
