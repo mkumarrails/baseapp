@@ -1,7 +1,18 @@
-<h1>User Signup</h1>
-
-<%= form_tag( '/customer_registrations', :method => :post) do %>
-  <%= label_tag  :email %>
-  <%= text_field_tag :email %>
-  <%= submit_tag 'Login or SignUp' %>
-<% end %> 
+<div >
+  <div>
+    <h1>Join us! Or login</h1>
+    <h4>
+      A great, healthy, friendly and <b>sexy</b> community.
+    </h4> 
+   &nbsp;
+    <form method="POST" action="/customer_registrations">
+      <h4>Send the membership link to my email:</h4>
+      <input type="email" name="email" autofocus="true" value="<%= params[:email] %>" style="width: 500px;" />
+      <br/>    
+      <p>
+        <button class="button radius success">SignUp or Login</button>
+      </p>
+    </form>
+        <p style="color: #999;">No passwords to forget (or remember). You'll get a link to login in a few moments.
+  </div>
+</div>
