@@ -1,0 +1,19 @@
+<% if @customer %>
+<p>
+  Welcome back <%= @customer %>,
+</p>
+<p>
+  Login to your account. <i>Passwords are not required.</i>
+</p>
+<% else %>
+<p>
+  Welcome to BaseApp!
+</p>
+<p>
+  Setup your account and login with one click. <i>Passwords are not required.</i>
+</p>
+<% end %>
+
+<p>
+  <center><a href="<%= "localhost:3000" %>/customer_registrations/<%= @token %>"><h3>Click Here to Login</h3></a></center>
+</p>

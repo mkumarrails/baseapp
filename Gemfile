@@ -21,7 +21,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
-
+gem 'stringex'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -37,4 +37,5 @@ gem 'jquery-rails'
 # To use debugger
 gem 'debugger'
 gem "twitter-bootstrap-rails"
-gem 'composite_primary_keys'
+gem 'uuidtools'
+gem 'redis'
