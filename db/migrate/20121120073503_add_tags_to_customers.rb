@@ -1,5 +1,5 @@
 class AddTagsToCustomers < ActiveRecord::Migration
   def change
-  	add_column :customers, :tags, :integer, :array => true
+  	add_column :customers, :tags, :string, :array => true
   end
 end

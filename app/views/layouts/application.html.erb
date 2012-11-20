@@ -12,3 +12,11 @@
 
 </body>
 </html>
+
+
+<div id="user_nav">
+  <% unless current_customer %>
+    <%= link_to "Sign in with Facebook", "/auth/facebook", id: "sign_in" %>
+  <% end %>
+</div>
+

@@ -1,5 +1,6 @@
 class CustomerRegistrationsController < ApplicationController
 
+  # for customer login
   def index
     if params[:id] && email = $redis.get("login_token:#{params[:id]}")
       url = '/'
@@ -23,6 +24,7 @@ class CustomerRegistrationsController < ApplicationController
     end
   end
 
+  # for customer signup&login via email
 	def create
     if params[:email] && params[:email].strip.downcase =~ /^[\w.!#\$%+-]+@[\w-]+(?:\.[\w-]+)+$/
       CustomerRegistrationMailer.registration_alert(params[:email].strip.downcase).deliver
