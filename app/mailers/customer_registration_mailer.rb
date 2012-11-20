@@ -5,8 +5,8 @@ class CustomerRegistrationMailer < ActionMailer::Base
     @token = UUIDTools::UUID.random_create.to_s
 
     if @customer = Customer.find_by_email(email.strip.downcase)
-      email = "test@gmail.com"
-      @unsubscribe = "/unsubscribe?id=#{@customer.id}&join_token=#{@token}"
+#      email = "test@gmail.com"
+#      @unsubscribe = "/unsubscribe?id=#{@customer.id}&join_token=#{@token}"
       @val = @customer.email
     else
       @val = email
